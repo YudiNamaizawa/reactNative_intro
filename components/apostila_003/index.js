@@ -8,26 +8,59 @@ export default function Index() {
     const [numero, setNumero] = useState(0);
 
     function addNumber(){
-        setNumero(numero++);
-        // setNumero(numero + 1);
+        setNumero(numero + 1);
+    } 
+
+    function subNumber(){
+        setNumero(numero - 1);
+    }
+
+    function zerar(){
+        setNumero(0);
     }
 
   return(
     <View style={styles.container}>
         <Text style={styles.paragraph}>
             Exemplo 3
-        </Text>    
+        </Text>            
 
-        <Text style={styles.textCounter}>{numero}</Text>
+        <View style={styles.programa}>
 
-        <TouchableOpacity 
-            style={styles.button} 
-            onPress={() => addNumber()}
-        >
-            <Text style={styles.textButton}>
-                +1
-            </Text>
-        </TouchableOpacity>
+            <View style={styles.horizontal}>
+
+                <TouchableOpacity 
+                    style={[styles.button, styles.buttonMaisMenos]} 
+                    onPress={() => subNumber()}
+                >
+                    <Text style={styles.textButton}>
+                        -
+                    </Text>
+                </TouchableOpacity>
+
+                <Text style={styles.textCounter}>{numero}</Text>
+
+                <TouchableOpacity 
+                    style={[styles.button, styles.buttonMaisMenos]} 
+                    onPress={() => addNumber()}
+                >
+                    <Text style={styles.textButton}>
+                        +
+                    </Text>
+                </TouchableOpacity>
+
+            </View>
+
+            <TouchableOpacity 
+            style={[styles.button, {borderRadius: 30}]} 
+            onPress={() => zerar()}
+            >
+                <Text style={styles.textButton}>
+                    Zerar
+                </Text>
+            </TouchableOpacity>        
+
+        </View>                
 
     </View>
   );

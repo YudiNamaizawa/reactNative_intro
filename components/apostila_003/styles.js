@@ -18,18 +18,20 @@ const styles = StyleSheet.create({
       backgroundColor: '#9E9E9E', 
       height: 60, 
       justifyContent: 'center', 
+      width: 234
     }, 
     textButton: {
       fontSize: 20, 
       color: '#fff', 
       textAlign: 'center', 
     }, 
-    counter: {
+    programa: {
       borderWidth: 4, 
       borderColor: '#9E9E9E', 
       padding: 8,  
       marginTop: 8, 
-      justifyContent: 'center',
+      justifyContent: 'center', 
+      alignItems: 'center'
     }, 
     textCounter: {
       fontSize: 32, 
@@ -37,7 +39,18 @@ const styles = StyleSheet.create({
       textAlign: 'center',    
       fontWeight: 'bold', 
       padding: 8, 
-    }
+    }, 
+    horizontal: {
+      //borderWidth: 2, 
+      marginBottom: 8, 
+      flexDirection: 'row', 
+      justifyContent: 'center', 
+      padding: 8, 
+    },  
+    buttonMaisMenos: {
+      width: 60, 
+      marginHorizontal: 40,
+    }, 
   });
 
   export default styles;
