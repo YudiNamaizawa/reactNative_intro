@@ -3,6 +3,8 @@ import { StyleSheet, View } from 'react-native';
 
 import Constants from 'expo-constants';
 
+import Exemplo_001 from './components/exemplo_001';
+import Exemplo_002 from './components/exemplo_002';
 import Exemplo_003 from './components/exemplo_003';
 import Exemplo_004 from './components/exemplo_004'; 
 import Exemplo_005 from './components/exemplo_005'; 
