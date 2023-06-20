@@ -11,54 +11,33 @@ export default function Index() {
         setNumero(numero + 1);
     } 
 
-    function subNumber(){
-        setNumero(numero - 1);
-    }
-
-    function zerar(){
-        setNumero(0);
-    }
-
   return(
     <View style={styles.container}>
         <Text style={styles.paragraph}>
             Exemplo 3
-        </Text>            
+        </Text>   
+
+        <TouchableOpacity 
+            style={[styles.button]} 
+            onPress={() => alert('Olá, mundo!')}
+        >
+            <Text style={styles.textButton}>
+                Diga "Olá, mundo!"
+            </Text>
+        </TouchableOpacity>          
 
         <View style={styles.programa}>
 
-            <View style={styles.horizontal}>
-
-                <TouchableOpacity 
-                    style={[styles.button, styles.buttonMaisMenos]} 
-                    onPress={() => subNumber()}
-                >
-                    <Text style={styles.textButton}>
-                        -
-                    </Text>
-                </TouchableOpacity>
-
-                <Text style={styles.textCounter}>{numero}</Text>
-
-                <TouchableOpacity 
-                    style={[styles.button, styles.buttonMaisMenos]} 
-                    onPress={() => addNumber()}
-                >
-                    <Text style={styles.textButton}>
-                        +
-                    </Text>
-                </TouchableOpacity>
-
-            </View>
+            <Text style={styles.textCounter}>{numero}</Text>
 
             <TouchableOpacity 
-            style={[styles.button, {borderRadius: 30}]} 
-            onPress={() => zerar()}
+                style={[styles.button]} 
+                onPress={() => addNumber()}
             >
                 <Text style={styles.textButton}>
-                    Zerar
+                    + 1
                 </Text>
-            </TouchableOpacity>        
+            </TouchableOpacity>       
 
         </View>                
 

@@ -9,14 +9,21 @@ import Exemplo_003 from './components/exemplo_003';
 import Exemplo_004 from './components/exemplo_004'; 
 import Exemplo_005 from './components/exemplo_005'; 
 import Exemplo_006 from './components/exemplo_006'; 
-import Exemplo_007 from './components/exemplo_007';
+import Exemplo_007 from './components/exemplo_007'; 
+
+import Atividade_001 from './components/atividade_001'; 
+import Atividade_002 from './components/atividade_002'; 
+import Atividade_003 from './components/atividade_003'; 
+import Atividade_004 from './components/atividade_004'; 
+import Atividade_005 from './components/atividade_005'; 
+import Atividade_006 from './components/atividade_006';
 
 const corApp = '#fff';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Exemplo_007 />
+      <Atividade_006 />
       <StatusBar style={corApp==='#000' ? 'light' : 'dark'} />
     </View>
   );
