@@ -17,14 +17,16 @@ import Atividade_003 from './components/atividade_003';
 import Atividade_004 from './components/atividade_004'; 
 import Atividade_005 from './components/atividade_005'; 
 import Atividade_006 from './components/atividade_006'; 
-import Atividade_007 from './components/atividade_007';
+import Atividade_007 from './components/atividade_007'; 
+
+import Velha from './components/velha';
 
 const corApp = '#fff';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Atividade_007 />
+      <Velha />
       <StatusBar style={corApp==='#000' ? 'light' : 'dark'} />
     </View>
   );
