@@ -6,7 +6,7 @@ import styles from './styles';
 function Square({ value, onSquareClick }) {
   return (
     <TouchableOpacity style={styles.square} onPress={onSquareClick}>
-      <Text>{value}</Text>
+      <Text style={styles.mensagem}>{value}</Text>
     </TouchableOpacity>    
   );
 }
@@ -29,9 +29,9 @@ function Board({ xIsNext, squares, onPlay }) {
   const winner = calculateWinner(squares);
   let status;
   if (winner) {
-    status = 'Winner: ' + winner;
+    status = 'Vencedor: ' + winner;
   } else {
-    status = 'Next player: ' + (xIsNext ? 'X' : 'O');
+    status = 'Próximo jogador: ' + (xIsNext ? 'X' : 'O');
   }
 
   return (
@@ -77,13 +77,13 @@ function Game() {
   const moves = history.map((squares, move) => {
     let description;
     if (move > 0) {
-      description = 'Go to move #' + move;
+      description = 'Volte para o movimento #' + move;
     } else {
-      description = 'Go to game start';
+      description = 'Voltar para o início do jogo';
     }
-    return (
+    return (      
       <TouchableOpacity onPress={() => jumpTo(move)} key={move}>
-        <Text>{description}</Text>
+        <Text style={styles.historico}>{description}</Text>
       </TouchableOpacity>
     );
   });
@@ -92,10 +92,10 @@ function Game() {
     <View style={styles.game}>
       <View style={styles.gameBoard}>
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
-      </View>
-      <View style={styles.gameInfo}>
-        <Text>{moves}</Text>
-      </View>
+      </View> 
+      <View style={styles.containerHistorico}>
+        {moves}    
+      </View>           
     </View>
   );
 }
