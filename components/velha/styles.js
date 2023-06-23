@@ -27,7 +27,7 @@ const style = StyleSheet.create({
         justifyContent: 'center', 
         height: '50%',
     },     
-    montarJogo: {
+    boardRow: {
         flexDirection: 'row', 
     },  
     historico: {

@@ -10,6 +10,7 @@ import Exemplo_004 from './components/exemplo_004';
 import Exemplo_005 from './components/exemplo_005'; 
 import Exemplo_006 from './components/exemplo_006'; 
 import Exemplo_007 from './components/exemplo_007'; 
+import Exemplo_008 from './components/exemplo_008';
 
 import Atividade_001 from './components/atividade_001'; 
 import Atividade_002 from './components/atividade_002'; 
@@ -26,7 +27,7 @@ const corApp = '#fff';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Velha />
+      <Exemplo_008 />
       <StatusBar style={corApp==='#000' ? 'light' : 'dark'} />
     </View>
   );
