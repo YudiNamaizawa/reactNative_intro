@@ -8,7 +8,13 @@ import Atividades from './atividades';
 function MyTabs() {
   return (
     <Tab.Navigator>
-      <Tab.Screen name="Exemplos" component={Exemplos} />
+      <Tab.Screen 
+      name="Exemplos" 
+      component={Exemplos}
+      options={{
+        //tabBar
+      }} 
+       />
       <Tab.Screen name="Atividades" component={Atividades} />
     </Tab.Navigator>
   );
