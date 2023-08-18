@@ -4,16 +4,18 @@ import { StyleSheet, View } from 'react-native';
 import Constants from 'expo-constants';
 import 'react-native-gesture-handler';
 
-import Velha from './components/velha';
+//import Velha from './components/velha';
+import Drawer from './components/navegacao/rotasNavegacao';
 
 const corApp = '#fff';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Velha />
-      <StatusBar style={corApp==='#000' ? 'light' : 'dark'} />
-    </View>
+    // <View style={styles.container}>
+    //   <Drawer />
+    //   <StatusBar style={corApp==='#000' ? 'light' : 'dark'} />
+    // </View>
+    <Drawer />
   );
 }
 

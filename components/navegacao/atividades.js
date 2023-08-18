@@ -1,14 +1,14 @@
 import { View, Text } from 'react-native';
 
 // importa arquivo de estilização
-import styles from './styles';
+import styles from './exemplosStyles';
 
 // definição das funções dos componentes
 function Index() {
     return (
         <View style={styles.container}>
             <Text style={styles.texto} >
-                Introdução React Native
+                Atividades...
             </Text>
         </View>
     );
