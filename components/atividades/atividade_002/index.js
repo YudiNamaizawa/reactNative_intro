@@ -4,7 +4,7 @@ import styles from './styles';
 
 import Saudacoes from './saudacoes';
 
-import logo from '../../assets/002-1-react-native.png';
+import logo from '../../../assets/002-1-react-native.png';
 
 function Index() {
     return (

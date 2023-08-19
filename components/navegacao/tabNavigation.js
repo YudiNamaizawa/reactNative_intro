@@ -2,20 +2,15 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 const Tab = createBottomTabNavigator();
 
-import Exemplos from './exemplos';
-import Atividades from './atividades';
+import Stack from './stackNavigation';
+import Exemplos from './exemplos'
+import StackAtv from './stackNavigationAtv';
 
 function MyTabs() {
   return (
     <Tab.Navigator>
-      <Tab.Screen 
-      name="Exemplos" 
-      component={Exemplos}
-      options={{
-        //tabBar
-      }} 
-       />
-      <Tab.Screen name="Atividades" component={Atividades} />
+      <Tab.Screen name="Stack" component={Stack}/>
+      <Tab.Screen name="StackAtv" component={StackAtv} />
     </Tab.Navigator>
   );
 }

@@ -1,10 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native'; 
-
-import Constants from 'expo-constants';
 import 'react-native-gesture-handler';
+import Constants from 'expo-constants';
 
-//import Velha from './components/velha';
+import Velha from './components/velha';
 import Drawer from './components/navegacao/rotasNavegacao';
 
 const corApp = '#fff';
